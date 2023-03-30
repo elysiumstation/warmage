@@ -64,7 +64,7 @@ func (suite *KeeperTestSuite) SetupTest() {
 		Version: tmversion.Consensus{
 			Block: version.BlockProtocol,
 		},
-		ChainID:         "warmage_5000-101",
+		ChainID:         "warmage_4200-101",
 		Height:          1,
 		Time:            time.Now().UTC(),
 		ProposerAddress: addrs[0].Bytes(),

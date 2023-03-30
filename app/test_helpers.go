@@ -31,7 +31,7 @@ func Setup(isCheckTx bool) *Warmage {
 
 		app.InitChain(
 			abci.RequestInitChain{
-				ChainId:         "warmage_5000-101",
+				ChainId:         "warmage_4200-101",
 				Validators:      []abci.ValidatorUpdate{},
 				ConsensusParams: simapp.DefaultConsensusParams,
 				AppStateBytes:   stateBytes,

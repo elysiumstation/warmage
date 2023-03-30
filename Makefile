@@ -518,7 +518,7 @@ localnet-build:
 	$(MAKE) -C contrib/localnet
 
 # Start a multi-node testnet locally
-localnet-start: localnet-stop build-linux localnet-build
+localnet-start: localnet-stop build localnet-build
 	@if ! [ -f $(BUILDDIR)/node0/maged/config/genesis.json ]; \
 	then docker run --rm -v $(BUILDDIR):/warmage:Z warmagezone/localnetnode testnet init-files -v 4 -o /warmage --starting-ip-address 192.168.10.2 --predetermined-mnemonic --keyring-backend=test; \
 	fi
